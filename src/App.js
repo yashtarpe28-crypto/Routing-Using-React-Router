@@ -8,11 +8,13 @@ import Contact from './components/Contact'
 const App = () => (
   <BrowserRouter>
     <>
+    <Switch>
       <Header />
       <Route exact path="/home" component={Home} />
       <Route exact path="/about" component={About} />
       <Route exact path="/contact" component={Contact} />
       <Route component={NotFound} />
+      </Switch>
     </>
   </BrowserRouter>
 )
